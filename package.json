@@ -1,18 +1,18 @@
 {
-  "author": "Bert De Block",
-  "license": "MIT",
   "private": true,
   "repository": "https://github.com/bertdeblock/ember-cli-should-include",
-  "devDependencies": {
-    "husky": "^4.3.6",
-    "lerna": "^3.22.1"
-  },
+  "license": "MIT",
+  "author": "Bert De Block",
+  "workspaces": [
+    "packages/*"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lerna run pre-commit"
     }
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "devDependencies": {
+    "husky": "^4.3.6",
+    "lerna": "^3.22.1"
+  }
 }

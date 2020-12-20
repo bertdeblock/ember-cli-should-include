@@ -23,6 +23,14 @@
     "test:ember": "ember test",
     "test:ember-compatibility": "ember try:each"
   },
+  "lint-staged": {
+    "*.hbs": [
+      "ember-template-lint --fix"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "ember-cli-babel": "^7.23.0",
     "ember-cli-htmlbars": "^5.3.1"
@@ -68,9 +76,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "lint-staged": {
-    "*.hbs": ["ember-template-lint --fix"],
-    "*.js": ["eslint --fix"]
   }
 }
