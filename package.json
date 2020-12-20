@@ -1,0 +1,9 @@
+{
+    "author": "Bert De Block",
+    "license": "MIT",
+    "private": true,
+    "repository": "https://github.com/bertdeblock/ember-cli-should-include",
+    "workspaces": [
+        "packages/*"
+    ]
+}
